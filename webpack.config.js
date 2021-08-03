@@ -7,7 +7,7 @@ module.exports = {
     devtool: false,
     devServer: {
         // contentBase: '/public',
-        contentBase: path.join(__dirname, 'public'),
+        contentBase: path.join(__dirname, 'dist'),
         historyApiFallback: true,
         // historyApiFallback: true,
     },
