@@ -13,9 +13,9 @@ module.exports = {
     },
     output: {
         // filename: "bundle.js",
-        // path: path.resolve(__dirname, "dist"),
+        path: path.resolve(__dirname, "build"),
         filename: 'bundle.js',
-        path: path.join(__dirname, 'build'),
+//         path: path.join(__dirname, 'build'),
         // publicPath: '/',
     },
       performance: {
