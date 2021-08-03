@@ -6,8 +6,8 @@ module.exports = {
   // devtool: 'inline-source-map',
     devtool: false,
     devServer: {
-        // contentBase: '/public',
-        contentBase: path.join(__dirname, 'dist'),
+        contentBase: '/build',
+//         contentBase: path.join(__dirname, 'dist'),
         historyApiFallback: true,
         // historyApiFallback: true,
     },
@@ -15,13 +15,13 @@ module.exports = {
         // filename: "bundle.js",
         // path: path.resolve(__dirname, "dist"),
         filename: 'bundle.js',
-        path: path.join(__dirname, 'public'),
+        path: path.join(__dirname, 'build'),
         // publicPath: '/',
     },
       performance: {
         hints: false,
-        maxEntrypointSize: 512000,
-        maxAssetSize: 512000
+//         maxEntrypointSize: 512000,
+//         maxAssetSize: 512000
     },
     module: {
         rules: [
