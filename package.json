@@ -33,7 +33,7 @@
   },
   "scripts": {
     "start": "webpack-dev-server",
-    "build": "webpack -p",
+    "build": "webpack --mode development",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
