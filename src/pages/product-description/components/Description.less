@@ -28,25 +28,29 @@
         }
     }
 
-    // .bg {
-    //     background-color: #C4C4C4;
-    //     width: 550px;
-    //     height: 300px;
-    // }
-
-    // .bg-ss {
-    //     background-color: #C4C4C4;
-    //     width: 280px;
-    //     height: 140px;
-    //     margin: 0 10px 20px 0px;
-    // }
-
-    .brosur{
+    .brosur {
         margin: 40px 0;
+
         span {
             color: #AF022C;
         }
-    
     }
-   
+}
+
+@media screen and (max-width: 500px) {
+    .description {
+        .product-description, .aspek, .demo {
+            margin-top: 20px;
+            h3 {
+                font-weight: 700;
+                font-size: 17px;
+            }
+        
+            p,
+            li {
+                font-size: 12px;
+                text-align: justify;
+            }
+        }
+    }
 }

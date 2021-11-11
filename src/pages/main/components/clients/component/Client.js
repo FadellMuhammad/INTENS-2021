@@ -17,7 +17,7 @@ const Client = () => {
                             <CardClients data={client} />
                         </Col>
                     ))}
-                    {/* <Col lg={6} sm={12}>
+                    {/* <Col lg={6} sm={12}>    
                         <Card
                             className="card-item bg-blank"
                         > */}

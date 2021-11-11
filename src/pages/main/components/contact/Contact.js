@@ -20,7 +20,7 @@ const Contact = () => {
                         <img src={iconPhone} alt="icon-phone" />
                     </div>
                 </div>
-
+        
                 <div className="content-message">
                     <Row>
                         <Col lg={12} sm={24}>

@@ -15,7 +15,8 @@ const ListFamily = () => {
                 {family && family.map((family, i) => (
                      <Col key={`family${i}`}>
                      <Card
-                         className="card-item bg-family"
+                     cover={<img src={family.gambar} alt={family.name} />}
+                         className="card-item"
                      >
                          <Meta
                              title={family.nama}

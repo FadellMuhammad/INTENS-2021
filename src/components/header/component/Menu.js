@@ -1,4 +1,3 @@
-// import { Link } from 'react-router-dom';
 import React from "react";
 import { Link } from "react-router-dom";
 
@@ -6,6 +5,7 @@ const Menu = () => {
     return (
         <div className="Menu">
             <ul>
+                <Link to="/"><li> Home </li></Link>
                 <Link to="/product"><li> Products </li></Link>
                 <a href="#contact"><li> Contact </li></a>
                 <a href="#about"><li> About </li></a>

@@ -6,7 +6,7 @@ const {Meta} = Card;
 const CardClients = (props) => {
     return (
         <Card
-        // cover={<img src={props.data.gambar} alt="img-intens-ihis" />}
+        cover={<img src={props.data.gambar} alt={props.data.nama} />}
         className="card-item bg-blank"
     >
          <Meta

@@ -15,14 +15,9 @@ module.exports = merge(common, {
   },
   stats: {
     children: true,
-    // warningsFilter: [
-    //   /\-\-underline\-color/,
-    // ]
   },
   performance: {
     hints: false,
-//         maxEntrypointSize: 512000,
-//         maxAssetSize: 512000
 },
   optimization: {
     minimizer: [
@@ -30,7 +25,6 @@ module.exports = merge(common, {
       new TerserPlugin(),
       new HtmlWebpackPlugin({
         template: "./public/index.html",
-        // favicon: "./src/assets/favicon.png",
         minify: {
           removeAttributeQuotes: true,
           collapseWhitespace: true,
