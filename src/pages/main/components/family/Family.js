@@ -14,7 +14,9 @@ const Family = () => {
                         <h1>We are family</h1>
                         <p> <spam className="red">Professionals</spam> behind the scene.</p>
                     </div>
-                    <img src={iconFamily} alt="icon-family" />
+                    <div className="img-icon">
+                        <img src={iconFamily} alt="icon-family" />
+                    </div>
                 </div>
                 <ListFamily />
             </div>
