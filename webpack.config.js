@@ -8,18 +8,12 @@ module.exports = {
         children: true,
       },
     devServer: {
-        // contentBase: '/public',
         contentBase: path.join(__dirname, 'public'),
         historyApiFallback: true,
-        
-        // historyApiFallback: true,
     },
     output: {
-        // filename: "bundle.js",
-        // path: path.resolve(__dirname, "dist"),
         filename: 'bundle.js',
         path: path.join(__dirname, 'public'),
-        // publicPath: '/',
     },
     module: {
         rules: [

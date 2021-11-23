@@ -11,11 +11,11 @@ const ListFamily = () => {
 
     return (
         <div className="ListFamily">
-            <Row justify="center">
+            <Row justify="center" gutter={[16,16]}>
                 {family && family.map((family, i) => (
-                     <Col key={`family${i}`}>
+                     <Col lg={8} md={12} key={`family${i}`}>
                      <Card
-                         className="card-item bg-family"
+                     cover={<img src={family.gambar} alt={family.name} />}
                      >
                          <Meta
                              title={family.nama}
@@ -25,38 +25,6 @@ const ListFamily = () => {
                  </Col>
                 ))}
             </Row>
-            {/* <Row justify="center">
-                <Col lg={8} sm={12}>
-                    <Card
-                        className="card-item bg-family"
-                    >
-                        <Meta
-                            title="Name"
-                            description="Job/Title"
-                        ></Meta>
-                    </Card>
-                </Col>
-                <Col lg={8} sm={12}>
-                    <Card
-                        className="card-item bg-family"
-                    >
-                        <Meta
-                            title="Name"
-                            description="Job/Title"
-                        ></Meta>
-                    </Card>
-                </Col>
-                <Col lg={8} sm={12}>
-                    <Card
-                        className="card-item bg-family"
-                    >
-                        <Meta
-                            title="Name"
-                            description="Job/Title"
-                        ></Meta>
-                    </Card>
-                </Col>
-            </Row> */}
         </div>
     )
 }

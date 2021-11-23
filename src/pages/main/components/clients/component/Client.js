@@ -1,7 +1,6 @@
 import React from "react";
 import { Row, Col } from "antd";
 import { useRequest } from "ahooks";
-
 import "./Client.less";
 import CardClients from "./CardClients";
 
@@ -11,88 +10,12 @@ const Client = () => {
 
     return (
         <div className="client">
-                <Row justify="center">
+                <Row justify="center" gutter={[16,16]}>
                     {clients && clients.map((client, i) => (
-                        <Col key={`client${i}`}>
+                        <Col lg={8} md={12} key={`client${i}`}>
                             <CardClients data={client} />
                         </Col>
                     ))}
-                    {/* <Col lg={6} sm={12}>
-                        <Card
-                            className="card-item bg-blank"
-                        > */}
-                            {/* <Meta
-                            title="Name"
-                            description="Job/Title"
-                        ></Meta> */}
-                        {/* </Card>
-                    </Col>
-                    <Col lg={6} sm={12}>
-                        <Card
-                            className="card-item bg-blank"
-                        >
-                        </Card>
-                    </Col>
-                    <Col lg={6} sm={12}>
-                        <Card
-                            className="card-item bg-blank"
-                        >
-                        </Card>
-                    </Col>
-                    <Col lg={6} sm={12}>
-                        <Card
-                            className="card-item bg-blank"
-                        >
-                        </Card>
-                    </Col>
-                </Row>
-                <Row>
-                    <Col lg={6} sm={12}>
-                        <Card
-                            className="card-item bg-blank"
-                        > */}
-                            {/* <Meta
-                            title="Name"
-                            description="Job/Title"
-                        ></Meta> */}
-                        {/* </Card>
-                    </Col>
-                    <Col lg={6} sm={12}>
-                        <Card
-                            className="card-item bg-blank"
-                        >
-                        </Card>
-                    </Col>
-                    <Col lg={6} sm={12}>
-                        <Card
-                            className="card-item bg-blank"
-                        >
-                        </Card>
-                    </Col>
-                    <Col lg={6} sm={12}>
-                        <Card
-                            className="card-item bg-blank"
-                        >
-                        </Card>
-                    </Col>
-                </Row>
-                <Row>
-                    <Col lg={6} sm={12} offset={6}>
-                        <Card
-                            className="card-item bg-blank"
-                        > */}
-                            {/* <Meta
-                            title="Name"
-                            description="Job/Title"
-                        ></Meta> */}
-                        {/* </Card>
-                    </Col>
-                    <Col lg={12} sm={12}>
-                        <Card
-                            className="card-item bg-blank"
-                        >
-                        </Card>
-                    </Col> */}
                 </Row>
             </div>
     )

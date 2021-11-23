@@ -27,8 +27,8 @@ const Description = () => {
                         Berangkat dari permasalahan di atas, Balai Pengkajian dan Penerapan Teknologi (BPPT) dan PT. Industri Telekomunikasi Indonesia (Persero) melakukan Perjanjian Kerja Sama dan Join Development dalam pengembangan Sistem Evoting, dimana system tersebut telah rampung dan teruji dalam pelaksanaan pertama kali tahun 2013 di Kabupaten Boyolali untuk pemilihan kepala desa di 7 desa. Sampai akhir tahun 2019, pelaksanaan Pemilihan kepala daerah dalam hal ini Kepala Desa, telah dilaksanakan di 22 kabupaten dan lebih dari 1000 desa. Melihat peluang market product Evoting ke depan , PT Inti Konten Indonesia (INTENS) menjalin kerjasama dengan Balai Pengkajian dan Penerapan Teknologi (BPPT) tentang Intermediasi Sistem Pemilihan Umum Secara Elektronik Terpadu yang tertuang dalam Perjanjian Kerjasama (PKS).</p>
                 </div>
                 <div className="aspek">
-                    <Row>
-                        <Col lg={10} sm={24}>
+                    <Row gutter={[16,16]}>
+                        <Col lg={12} sm={24}>
                             <h3>Aspek Keamanan</h3>
                             <ul type="square">
                                 <li>Evoting tidak tersambung ke jaringan apapun sehingga aman dari hacker</li>
@@ -37,7 +37,7 @@ const Description = () => {
                                 <li>eVoting aman karena tanda pemilih sudah memilih adalah tercetaknya struk audit. Hasil dihitung setelah struk audit tercetak. Oleh karena itu walaupun listrik mati, hasil tidak hilang dan akan tersambung kembali saat listrik hidup, jika pemilih mengalami Hang di bilik, dan struk tidak keluar, maka pemilih tersebut diberi smart card lagi setelah perangkat dipulihkan kembali</li>
                             </ul>
                         </Col>
-                        <Col lg={12} sm={24} offset={2}>
+                        <Col lg={12} sm={24}>
                             <h3>Keunggulan</h3>
                             <ul type="square">
                                 <li>Efisien dan efektif</li>

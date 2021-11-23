@@ -16,32 +16,30 @@ const Header = () => {
     };
 
     return (
-        <>
-            <header>
-                <div className="container">
-                    <div className="navbar">
-                        <Logo />
-                        <div className="menu-regular">
-                            <Menu />
-                        </div>
-                        <div className="menu-drawer">
-                            <Button type="light" onClick={showDrawer}>
-                                ☰
-                            </Button>
-                            <Drawer
-                                placement="top"
-                                closable={false}
-                                onClose={onClose}
-                                visible={visible}
-                            >
-                                <Menu />
-                            </Drawer>
-                        </div>
+        <header>
+            <div className="container">
+                <div className="navbar">
+                    <Logo />
+                    <div className="menu-regular">
+                        <Menu />
                     </div>
-                    <img src={IconHome} alt="icon-home" />
+                    <div className="menu-drawer">
+                        <Button type="light" onClick={showDrawer}>
+                            ☰
+                        </Button>
+                        <Drawer
+                            placement="top"
+                            closable={false}
+                            onClose={onClose}
+                            visible={visible}
+                        >
+                            <Menu />
+                        </Drawer>
+                    </div>
                 </div>
-            </header>
-        </>
+                <img src={IconHome} alt="icon-home" />
+            </div>
+        </header>
     )
 }
 
